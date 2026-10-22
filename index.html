@@ -1,6 +1,4 @@
-from pathlib import Path
-
-html = r'''<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -103,9 +101,8 @@ footer { display:flex; justify-content:space-between; gap:18px; align-items:cent
         <article class="spec"><div class="spec-top"><span>Storage</span><span class="spec-icon">▰</span></div><h3>SAMSUNG 990 PRO M.2</h3><p>4TB · NVMe SSD</span></p></article>
         <article class="spec"><div class="spec-top"><span>Case</span><span class="spec-icon">◉</span></div><h3>PHANTEKS EVOLV S2</h3><p>Black Full TOWER CASE</span></p></article>
       </div>
-      <div class="note"><strong>Profile note:</strong> This is a stylish starter preview, not a live hardware scanner. Only the motherboard and RAM details currently available have been filled in; the remaining components are deliberately marked for confirmation.</div>
     </section>
-    <footer><span>© 2026 · Kokos' PC profile</span><span>Built for sharing · Easy to update as the build evolves</span></footer>
+    <footer><span>© 2026 · Kokos' PC profile</span><span>Built for sharing</span></footer>
   </div>
 </main>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
@@ -137,8 +134,4 @@ document.getElementById('copySpecs').addEventListener('click', async () => {
 });
 </script>
 </body>
-</html>'''
-
-path = Path("/mnt/data/index.html")
-path.write_text(html, encoding="utf-8")
-print(f"Created {path} ({path.stat().st_size:,} bytes).")
+</html>''')
